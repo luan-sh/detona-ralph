@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2 style="color: #ff0000;">Tempo</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2 style="color: #ff0000;">Pontos</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/player.png" alt="foto do jogador" height="60px" />
+                <h2 id="lives">0</h2>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-row">
+                <button id="btn-start-game" class="std-button">JOGAR</button>
+
+                <button id="btn-player" class="std-button">Jogador(a): <span></span></button>
+
+                <div style="text-align: center;" id="btn-level" class="std-button">Dificuldade: 
+                    <label for="easy"><input type="radio" name="rbLevel" id="easy" value="1" checked>Fácil</label>
+                    <label for="normal"><input type="radio" name="rbLevel" id="normal" value="2">Normal</label>
+                    <label for="hard"><input type="radio" name="rbLevel" id="hard" value="3">Difícil</label>
+                </div>
+
+                <div id="btn-volume" class="std-button">
+                    <label for="rng-volume" >Volume: </label><input id="rng-volume" type="range" min="0" max="1" step="0.1" value="0.2">
+                </div>
+            </div>
+        </div>
+        
+        <div id="last-result">
+            <div id="last-result-title">
+                <h3>Último Registro</h3>
+            </div>
+            <div id="last-player-name">
+                <h4>Jogador(a): <span></span></h4>
+            </div>
+            <div id="last-player-score">
+                <h4>Pontos: <span></span></h4>
+            </div>
+            <div id="last-player-level">
+                <h4>Dificuldade: <span></span></h4>
+            </div>
+        </div>
+        
+    </div>
+
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>

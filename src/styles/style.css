@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd700;
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #74f3a0;
+}
+
+.enemy{
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+}
+
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2){
+    margin-top: 1rem;
+}
+
+.std-button{
+    margin-top: 1rem;
+    width: 450px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: medium;
+    color: #000000;
+    display: block;
+    background-color: #74f3a0;
+    cursor: pointer;
+    border: #000000 solid 3px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#btn-player:hover, #btn-start-game:hover{
+    background-color: #00fc54 !important;
+}
+
+#last-result-title{
+    color: #74f3a0;
+}
+
+#last-result{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #ffffff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#btn-level, #btn-volume{
+    cursor: auto;
+}
+
+#btn-level *, #btn-volume *{
+    cursor: pointer;
+}
+
+#btn-level label{
+    display: inline;
+    border: 1px dashed #000;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 2px;
+}
+
+#btn-level label:hover{
+    background-color: #00fc54;
+}
+
+button:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
